@@ -11,7 +11,9 @@
 
 header {
     width: 100%;
-    height: 75px;
+    height: 85px;
+    border-bottom: 1px solid #cecfcf;
+    box-shadow: 0 0 5px #cecfcf inset;
 }
 
 header>.box {
@@ -244,4 +246,122 @@ footer {
     text-align: center;
     color: #A3A3A3;
     font-size: 12px;
+}
+
+
+/* 内容 */
+
+.bei {
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+.box3 {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.gangbi {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.gangbi>p {
+    float: left;
+}
+
+.box4 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.box4>.zuo {
+    width: 65%;
+    float: left;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+.box4>.yuo {
+    width: 35%;
+    float: left;
+}
+
+.zuo1 {
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.zuo1 p {
+    font-size: 30px;
+    color: #474747;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.z {
+    width: 100%;
+    height: 30px;
+    margin: 20px 0px;
+    line-height: 30px;
+}
+
+.z>span:nth-of-type(1) {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 30px;
+    background: url(/JiGuo/img/tx.jpg)no-repeat 0px 0px;
+}
+
+.z>span:nth-of-type(2) {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    color: #cecfcf;
+}
+
+.z>span:nth-of-type(3) {
+    float: right;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    color: #cecfcf;
+}
+
+.zuo2 {
+    width: 100%;
+    color: #333333;
+    font-size: 14px;
+}
+
+.zuo3>.p1 {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.zuo3 {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.img {
+    padding: 20px 0px;
+}
+
+.img>img {
+    width: 100%;
+}
+
+.p2 {
+    margin: 15px 0px;
 }
