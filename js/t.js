@@ -1,0 +1,1 @@
+var h1_ = document.getElementsByTagName('h1')[0]
