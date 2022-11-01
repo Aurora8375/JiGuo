@@ -91,6 +91,7 @@ a{
     background: #fe5341;
 }
 .use dt .top-tip {
+    font-size: 12px;
     color: #f5e8e8;
     position: absolute;
     line-height: 22px;
@@ -117,6 +118,7 @@ img {
 }
 .use dt .tabs {
     padding: 6px 0;
+    font-size: 12px;
 }
 .use dt .graw span {
     border: 1px solid #ccc;
@@ -154,4 +156,50 @@ img {
     background: url(../img/more.png) no-repeat left center;
     color: #fe5341;
     padding-left: 24px;
+}
+.use dt .red span {
+    border: 1px solid #fe5341;
+    font-size: 12px;
+}
+.use dt .tys {
+    background: #fbf4cb;
+    color: #c4a96a;
+}
+
+/* 悬浮时 */
+@-webkit-keyframes fade{
+	0%,100%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.6;
+	}
+}
+@-moz-keyframes fade{
+	0%,100%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.6;
+	}
+}
+@-ms-keyframes fade{
+	0%,100%{
+		filter:alpha(opacity=100);
+	}
+	50%{
+		filter:alpha(opacity=60);
+	}
+}
+@keyframes fade{
+	0%,100%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.6;
+	}
+}
+
+.report-box dt:hover{
+    animation:fade 1s ease-in infinite;-moz-animation:fade 1s ease-in infinite;-webkit-animation:fade 1s ease-in infinite;
 }
