@@ -100,8 +100,11 @@ load_.onclick = function() {
                                     </div>
                                     </a>
                     `
+                            // 创建li
                         var li_ = document.createElement('li');
+                        // 把内容添加到li
                         li_.innerHTML = str;
+                        // 在追加到页面中
                         ul_.appendChild(li_);
                     }
                 }
