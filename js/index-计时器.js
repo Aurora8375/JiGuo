@@ -75,4 +75,40 @@ window.onscroll = function() {
 
 
 // 点击渲染数据
-var load_ = document.getElementById('load1')
+// 点击
+var load_ = document.getElementsByClassName('load1')[0];
+var ul_ = document.getElementsByClassName('ull')[0];
+load_.onclick = function() {
+    // 请求数据
+    var ajax_ = new XMLHttpRequest() || new ActiveXObject();
+    ajax_.open('get', 'http://127.0.0.1:3000/play/new')
+    ajax_.send();
+    ajax_.onreadystatechange = function() {
+        if (ajax_.readyState == 4) {
+            if (ajax_.status == 200) {
+                data = JSON.parse(ajax_.responseText);
+                for (var i = 0; i < 2; i++) {
+                    for (var j = 0; j < 8; j++) {
+                        str = `
+                                    <a href="./probation.html">
+                                        <img src="${data[i][j].img}">
+                                        <span id="p3">${data[i][j].text}</span>
+                                        <p id="p4">${data[i][j].description}</p>
+                                        <div class="susu"><span id="qiaq">${data[i][j].price}</span>
+                                        <span>${data[i][j].like}</span>
+                                        <span>${data[i][j].words}</span>
+                                    </div>
+                                    </a>
+                    `
+                        var li_ = document.createElement('li');
+                        li_.innerHTML = str;
+                        ul_.appendChild(li_);
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
