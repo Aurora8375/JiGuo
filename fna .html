@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .ding {
+            width: 50px;
+            height: 60px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            font-weight: 900;
+            background-color: #e63b53;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="./img/bj.png" alt="">
+    </div>
+    <div class="ding">返回顶部</div>
+</body>
+
+</html>
+<script>
+    var div_ = document.getElementsByClassName('ding')[0];
+    window.onscroll = function() {
+        // 获取滚动条的高度
+        var top = document.documentElement.scrollTop || document.body.scrollTop;
+        // 获取自己屏幕的高度
+        var client = document.documentElement.clientHeight;
+        // 如果没有超过自己的屏幕高度就隐藏  超过了就显示
+        if (top > client) {
+            div_.style.display = "block";
+        } else {
+            div_.style.display = "none";
+        }
+        div_.onclick = function() {
+            var timer = setInterval(function() {
+                var top = document.documentElement.scrollTop || document.body.scrollTop;
+                // var shang = Math.floor(-top / 5);
+                var shang = Math.floor(top / 5);
+                // document.documentElement.scrollTop = document.body.scrollTop = top + shang;
+                document.documentElement.scrollTop = document.body.scrollTop = top - shang;
+                if (top == 0) {
+                    clearInterval(timer)
+                }
+            }, 30)
+        }
+    }
+</script>

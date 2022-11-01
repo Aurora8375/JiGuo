@@ -656,3 +656,15 @@ img:hover {
     color: #FE5341;
     background: url(/JiGuo/img/more.png)no-repeat 45% 47px;
 }
+
+.bongbu {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: url(/JiGuo/img/back.png) no-repeat 2px 8px;
+    background-color: #A3A3A3;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+}

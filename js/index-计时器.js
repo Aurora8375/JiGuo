@@ -36,15 +36,38 @@ for (var j = 0; j < span2__.length; j++) {
 }
 q_ = q_.join('');
 btn_.onclick = function() {
-    r_++;
-    span1_.innerHTML = r_ + '人申请';
-    q_--;
-    span2_.innerHTML = q_ + '台';
-    if (q_ == 0) {
-        alert('商品以抢完')
-        q_ = 0;
+        r_++;
+        span1_.innerHTML = r_ + '人申请';
+        q_--;
         span2_.innerHTML = q_ + '台';
+        if (q_ == 0) {
+            alert('商品以抢完')
+        }
 
     }
-
+    // 返回顶部
+var ding_ = document.getElementsByClassName('bongbu')[0];
+window.onscroll = function() {
+    // 获取滚动条的高度
+    var top = document.documentElement.scrollTop || document.body.scrollTop;
+    // 获取屏幕高度
+    var client = document.documentElement.clientHeight;
+    // 判断
+    if (top > client) {
+        ding_.style.display = "block";
+    } else {
+        ding_.style.display = "none";
+    }
+    // 点击回到顶部
+    ding_.onclick = function() {
+        var time = setInterval(
+            function() {
+                var top = document.documentElement.scrollTop || document.body.scrollTop;
+                var shang = Math.floor(top / 6);
+                document.documentElement.scrollTop = document.body.scrollTop = top - shang;
+                if (top == 0) {
+                    clearInterval(time)
+                }
+            }, 50)
+    }
 }
