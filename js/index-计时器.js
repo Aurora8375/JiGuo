@@ -35,6 +35,7 @@ for (var j = 0; j < span2__.length; j++) {
     }
 }
 q_ = q_.join('');
+
 btn_.onclick = function() {
         r_++;
         span1_.innerHTML = r_ + '人申请';
@@ -71,3 +72,7 @@ window.onscroll = function() {
             }, 50)
     }
 }
+
+
+// 点击渲染数据
+var load_ = document.getElementById('load1')
