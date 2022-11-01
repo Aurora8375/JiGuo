@@ -31,4 +31,12 @@ btn1.onclick = function () {
     } else {
         alert('用户名错误');
     }
+
+    //判断复选框是否被选中
+    // var check_ = checked.checked;
+    // if (check_ == true) {
+    //     setCookie('user', user_);
+    //     setCookie('psd', psd_);
+    //     setCookie('isrember', check_);
+    // }
 }
