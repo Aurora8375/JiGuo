@@ -298,7 +298,6 @@ footer {
 
 .focus>.jishi {
     width: 100%;
-    text-align: center;
     height: 50px;
     font-size: 20px;
     line-height: 50px;
@@ -511,14 +510,14 @@ footer {
     color: #A3A3A3;
     font-size: 12px;
     padding-left: 10px;
-    padding-right: 50%;
+    padding-right: 45%;
 }
 
 .susu>span:nth-of-type(2) {
     color: #A3A3A3;
     font-size: 12px;
     padding-left: 20px;
-    background: url(/JiGuo/img/zan.png) no-repeat 7px 1px;
+    background: url(/JiGuo/img/zan.png) no-repeat 7px 2px;
 }
 
 .susu>span:nth-of-type(3) {
@@ -582,7 +581,7 @@ footer {
     color: #A3A3A3;
     font-size: 12px;
     padding-left: 20px;
-    background: url(/JiGuo/img/xin.png) no-repeat 7px 1px;
+    background: url(/JiGuo/img/xin.png) no-repeat 7px 2px;
 }
 
 .susu1 span:nth-of-type(2) {
@@ -709,4 +708,8 @@ a:hover img {
     animation: fade 1s ease-in infinite;
     -moz-animation: fade 1s ease-in infinite;
     -webkit-animation: fade 1s ease-in infinite;
+}
+
+#xii {
+    background: url(/JiGuo/img/xin.png) no-repeat 7px 2px;
 }

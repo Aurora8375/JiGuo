@@ -27,6 +27,7 @@ for (var i = 0; i < span1__.length; i++) {
     }
 }
 r_ = r_.join('')
+
 var span2__ = span2_.innerHTML; //ren
 var q_ = []; //人数
 for (var j = 0; j < span2__.length; j++) {
@@ -35,14 +36,16 @@ for (var j = 0; j < span2__.length; j++) {
     }
 }
 q_ = q_.join('');
-
 btn_.onclick = function() {
         r_++;
         span1_.innerHTML = r_ + '人申请';
         q_--;
         span2_.innerHTML = q_ + '台';
-        if (q_ == 0) {
+        if (q_ <= 0) {
             alert('商品以抢完')
+            btn_.disabled = true;
+            span2_.innerHTML = 0 + '台'
+
         }
 
     }
@@ -94,11 +97,12 @@ load_.onclick = function() {
                                         <img src="${data[i][j].img}">
                                         <span id="p3">${data[i][j].text}</span>
                                         <p id="p4">${data[i][j].description}</p>
-                                        <div class="susu"><span id="qiaq">${data[i][j].price}</span>
-                                        <span>${data[i][j].like}</span>
-                                        <span>${data[i][j].words}</span>
-                                    </div>
                                     </a>
+                                        <div class="susu"><span id="qiaq">${data[i][j].price}</span>
+                                        <span id='xii' class="s11" onclick="shwo()">${data[i][j].like}</span>
+                                        <span class="s2" onclick="shw()">${data[i][j].words}</span>
+                                        </div>
+                                  
                     `
                             // 创建li
                         var li_ = document.createElement('li');
@@ -113,5 +117,85 @@ load_.onclick = function() {
         }
 
     }
+}
 
+// 心形
+var xii_ = document.getElementsByClassName('s11')
+
+for (var q = 0; q < xii_.length; q++) {
+    xii_[q].setAttribute('index', q)
+    let t = 1;
+    xii_[q].onclick = function() {
+        var index = this.getAttribute('index')
+        t++;
+        // 点击一下添加
+        if (t % 2 == 0) {
+            xii_[index].innerHTML++;
+            xii_[index].style.background = 'url(/JiGuo/img/xinRedh.png) no-repeat 5px 2px'
+            xii_[index].style.backgroundSize = '12px';
+            // 否则则就取消
+        } else {
+            xii_[index].innerHTML--;
+            xii_[index].style.background = 'url(/JiGuo/img/xin.png) no-repeat 5px 2px'
+            xii_[index].style.backgroundSize = '12px';
+        }
+    }
+}
+
+function shwo() {
+    var xii_ = document.getElementsByClassName('s11')
+    for (var q = 0; q < xii_.length; q++) {
+        xii_[q].setAttribute('index', q)
+        let t = 0
+        xii_[q].onclick = function() {
+            var index = this.getAttribute('index')
+            t++
+            // 点击一下添加
+            if (t % 2 == 0) {
+                xii_[index].innerHTML++;
+                xii_[index].style.background = 'url(/JiGuo/img/xinRedh.png) no-repeat 5px 2px'
+                xii_[index].style.backgroundSize = '12px';
+                // 否则则就取消
+            } else {
+                xii_[index].innerHTML--;
+                xii_[index].style.background = 'url(/JiGuo/img/xin.png) no-repeat 5px 2px'
+                xii_[index].style.backgroundSize = '12px';
+            }
+        }
+    }
+}
+
+// 信息
+var xinxi_ = document.getElementsByClassName('s2');
+for (var y = 0; y < xinxi_.length; y++) {
+    xinxi_[y].setAttribute('index', y)
+    xinxi_[y].onclick = function() {
+        var index = this.getAttribute('index')
+        xinxi_[index].innerHTML++;
+    }
+}
+
+function shw() {
+    for (var y = 0; y < xinxi_.length; y++) {
+        xinxi_[y].setAttribute('index', y)
+        xinxi_[y].onclick = function() {
+            var index = this.getAttribute('index')
+            xinxi_[index].innerHTML++;
+        }
+    }
+}
+
+
+
+
+// 点赞
+var zan_ = document.getElementsByClassName('s1');
+for (var n = 0; n < zan_.length; n++) {
+    zan_[n].setAttribute('index', n)
+    zan_[n].onclick = function() {
+        var index = this.getAttribute('index')
+        zan_[index].innerHTML++;
+        zan_[index].style.background = 'url(/JiGuo/img/use5.png) no-repeat 5px 2px'
+        zan_[index].style.backgroundSize = '12px';
+    }
 }
