@@ -131,12 +131,12 @@ for (var q = 0; q < xii_.length; q++) {
         // 点击一下添加
         if (t % 2 == 0) {
             xii_[index].innerHTML++;
-            xii_[index].style.background = 'url(/JiGuo/img/xinRedh.png) no-repeat 5px 2px'
+            xii_[index].style.background = 'url(../img/xinRedh.png) no-repeat 5px 2px'
             xii_[index].style.backgroundSize = '12px';
             // 否则则就取消
         } else {
             xii_[index].innerHTML--;
-            xii_[index].style.background = 'url(/JiGuo/img/xin.png) no-repeat 5px 2px'
+            xii_[index].style.background = 'url(../img/xin.png) no-repeat 5px 2px'
             xii_[index].style.backgroundSize = '12px';
         }
     }
@@ -153,12 +153,12 @@ function shwo() {
             // 点击一下添加
             if (t % 2 == 0) {
                 xii_[index].innerHTML++;
-                xii_[index].style.background = 'url(/JiGuo/img/xinRedh.png) no-repeat 5px 2px'
+                xii_[index].style.background = 'url(../img/xinRedh.png) no-repeat 5px 2px'
                 xii_[index].style.backgroundSize = '12px';
                 // 否则则就取消
             } else {
                 xii_[index].innerHTML--;
-                xii_[index].style.background = 'url(/JiGuo/img/xin.png) no-repeat 5px 2px'
+                xii_[index].style.background = 'url(../img/xin.png) no-repeat 5px 2px'
                 xii_[index].style.backgroundSize = '12px';
             }
         }
@@ -195,7 +195,7 @@ for (var n = 0; n < zan_.length; n++) {
     zan_[n].onclick = function() {
         var index = this.getAttribute('index')
         zan_[index].innerHTML++;
-        zan_[index].style.background = 'url(/JiGuo/img/use5.png) no-repeat 5px 2px'
+        zan_[index].style.background = 'url(../img/use5.png) no-repeat 5px 2px'
         zan_[index].style.backgroundSize = '12px';
     }
 }

@@ -464,7 +464,7 @@ footer {
 .boxx>span>a {
     padding-right: 30px;
     font-size: 12px;
-    background: url(/JiGuo/img/readMore.png) no-repeat 50px 3px;
+    background: url(../img/readMore.png) no-repeat 50px 3px;
     color: #FE5341;
 }
 
@@ -517,14 +517,14 @@ footer {
     color: #A3A3A3;
     font-size: 12px;
     padding-left: 20px;
-    background: url(/JiGuo/img/zan.png) no-repeat 7px 2px;
+    background: url(../img/zan.png) no-repeat 7px 2px;
 }
 
 .susu>span:nth-of-type(3) {
     color: #A3A3A3;
     font-size: 12px;
     padding-left: 20px;
-    background: url(/JiGuo/img/reply.png) no-repeat 7px 1px;
+    background: url(../img/reply.png) no-repeat 7px 1px;
 }
 
 
@@ -581,14 +581,14 @@ footer {
     color: #A3A3A3;
     font-size: 12px;
     padding-left: 20px;
-    background: url(/JiGuo/img/xin.png) no-repeat 7px 2px;
+    background: url(../img/xin.png) no-repeat 7px 2px;
 }
 
 .susu1 span:nth-of-type(2) {
     color: #A3A3A3;
     font-size: 12px;
     padding-left: 20px;
-    background: url(/JiGuo/img/reply.png) no-repeat 7px 1px;
+    background: url(../img/reply.png) no-repeat 7px 1px;
 }
 
 .ding1 {
@@ -646,14 +646,14 @@ footer {
 
 .load>p {
     padding-left: 10px;
-    background: url(/JiGuo/img/more.png)no-repeat 45% 47px;
+    background: url(../img/more.png)no-repeat 45% 47px;
 }
 
 .bongbu {
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    background: url(/JiGuo/img/back.png) no-repeat 2px 8px;
+    background: url(../img/back.png) no-repeat 2px 8px;
     background-color: #A3A3A3;
     position: fixed;
     right: 30px;
@@ -711,5 +711,5 @@ a:hover img {
 }
 
 #xii {
-    background: url(/JiGuo/img/xin.png) no-repeat 7px 2px;
+    background: url(../img/xin.png) no-repeat 7px 2px;
 }

@@ -83,7 +83,7 @@ header>.box {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: url(../img/search.png) no-repeat 11px 15px;
+    background: url(/img/search.png) no-repeat 11px 15px;
 }
 
 .sour a:hover {
@@ -161,7 +161,7 @@ footer {
 .di>.wen1>.tu1 {
     width: 100%;
     height: 100px;
-    background: url(../img/logoImg.jpg) no-repeat 0px 25px;
+    background: url(/img/logoImg.jpg) no-repeat 0px 25px;
 }
 
 .tu2 {
@@ -315,7 +315,7 @@ a:hover img {
     margin-top: 10px;
     height: 300px;
     position: relative;
-    background: url(../img/original.jpg) no-repeat center top;
+    background: url(/img/original.jpg) no-repeat center top;
 }
 
 .focus {
@@ -406,7 +406,7 @@ a:hover img {
 }
 
 .on>ul>li:nth-of-type(1) {
-    background: url(/JiGuo/img/use1.png)no-repeat 50% 19px;
+    background: url(/img/use1.png)no-repeat 50% 19px;
 }
 
 .on>ul>li:nth-of-type(1)>span {
@@ -414,19 +414,19 @@ a:hover img {
 }
 
 .on>ul>li:nth-of-type(2) {
-    background: url(/JiGuo/img/use2.png)no-repeat 50% 19px;
+    background: url(/img/use2.png)no-repeat 50% 19px;
 }
 
 .on>ul>li:nth-of-type(3) {
-    background: url(/JiGuo/img/use3.png)no-repeat 50% 19px;
+    background: url(/img/use3.png)no-repeat 50% 19px;
 }
 
 .on>ul>li:nth-of-type(4) {
-    background: url(/JiGuo/img/use4.png)no-repeat 50% 19px;
+    background: url(/img/use4.png)no-repeat 50% 19px;
 }
 
 .on>ul>li:nth-of-type(5) {
-    background: url(/JiGuo/img/use5.png)no-repeat 50% 19px;
+    background: url(/img/use5.png)no-repeat 50% 19px;
 }
 
 
@@ -652,7 +652,7 @@ a:hover img {
 .boxx>span>a {
     padding-right: 30px;
     font-size: 12px;
-    background: url(/JiGuo/img/readMore.png) no-repeat 50px 3px;
+    background: url(/img/readMore.png) no-repeat 50px 3px;
     color: #FE5341;
 }
 
