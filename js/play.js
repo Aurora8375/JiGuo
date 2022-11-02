@@ -1,23 +1,30 @@
 //点击时心变红
 var xin = document.getElementsByClassName('xin');
 var look = document.getElementsByClassName('look');
-var num = 4;
 for (var i = 0; i < xin.length; i++) {
+
     xin[i].onclick = function () {
         this.style.background = 'url(../img/xinRedh.png) no-repeat left center';
         this.style.backgroundSize = '13px';
-        this.innerHTML = num;
+        var m = (this.firstChild.nodeValue) - 0;
+        m++;
+        this.innerHTML = m;
+
+
     }
 }
 //双击取消小红心
-for (var j = 0; j < xin.length; j++) {
-    xin[j].ondblclick = function () {
-        this.style.background = 'url(../img/xin.png) no-repeat left center';
-        this.style.backgroundSize = '13px';
-        var num = 3;
-        this.innerHTML = num;
-    }
-}
+// for (var j = 0; j < xin.length; j++) {
+//     xin[j].ondblclick = function () {
+//         this.style.background = 'url(../img/xin.png) no-repeat left center';
+//         this.style.backgroundSize = '13px';
+//         var k = (this.firstChild.nodeValue) - 0;
+//         console.log(k);
+//         var n = k - 1;
+//         console.log(n);
+//         this.innerHTML = n;
+//     }
+// }
 
 //底部渲染
 var more = document.getElementsByClassName('more')[0];
@@ -75,18 +82,23 @@ function render(data) {
         xin[i].onclick = function () {
             this.style.background = 'url(../img/xinRedh.png) no-repeat left center';
             this.style.backgroundSize = '13px';
-            this.innerHTML = num;
+            var m = (this.firstChild.nodeValue) - 0;
+            console.log(m);
+            m++;
+            this.innerHTML = m;
         }
     }
     //双击取消小红心
-    for (var j = 0; j < xin.length; j++) {
-        xin[j].ondblclick = function () {
-            this.style.background = 'url(../img/xin.png) no-repeat left center';
-            this.style.backgroundSize = '13px';
-            var num = 3;
-            this.innerHTML = num;
-        }
-    }
+    // for (var j = 0; j < xin.length; j++) {
+    //     xin[j].ondblclick = function () {
+    //         this.style.background = 'url(../img/xin.png) no-repeat left center';
+    //         this.style.backgroundSize = '13px';
+    //         var m = (this.firstChild.nodeValue) - 0;
+    //         console.log(m);
+    //         m--;
+    //         this.innerHTML = m;
+    //     }
+    // }
 
 
 

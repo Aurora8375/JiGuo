@@ -82,6 +82,7 @@ btn1.onclick = function () {
 
                         if (psd_ == psd2_) {
                             alert('注册成功');
+                            // location.href = '../enter.html';
                             window.location.href = '../enter.html';
                             setCookie('user', user_);
                             setCookie('psd', psd_);

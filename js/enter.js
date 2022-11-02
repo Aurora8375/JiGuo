@@ -20,9 +20,9 @@ btn1.onclick = function () {
     var user_ = user.value;
     var psd_ = psd.value;
     if (user_ == c) {
-        alert('用户名正确');
+
         if (psd_ == p) {
-            alert('密码正确');
+            alert('登录成功');
             window.location.href = '../index.html';
 
         } else {
