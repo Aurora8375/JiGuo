@@ -1,3 +1,9 @@
+.clearFix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 /* 内容部分 */
 .wrap{
     width: 1000px;
@@ -202,4 +208,67 @@ img {
 
 .report-box dt:hover{
     animation:fade 1s ease-in infinite;-moz-animation:fade 1s ease-in infinite;-webkit-animation:fade 1s ease-in infinite;
+}
+
+
+/* 导购最热页面 */
+.common ul {
+    padding-bottom: 20px;
+}
+.common ul li {
+    background: #fff;
+    width: 220px;
+    height: 231px;
+    line-height: 21px;
+    margin: 0 37px 35px 0;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+}
+.common ul li:hover{
+    animation:fade 1s ease-in infinite;-moz-animation:fade 1s ease-in infinite;-webkit-animation:fade 1s ease-in infinite;
+}
+.common ul li a {
+    display: block;
+    color: #474747;
+}
+.common ul li img {
+    border-radius: 6px 6px 0 0;
+}
+.common li .info {
+    padding: 7px 10px 10px;
+    height: 114px;
+}
+.guide li .info {
+    background: url(../img/listbg.jpg) no-repeat left bottom;
+    background-size: 221px 19px;
+}
+.report-box .common .info .name {
+    font-size: 14px;
+    height: 45px;
+    overflow: hidden;
+    word-break: break-all;
+}
+.common .info .tip {
+    padding: 13px 0;
+    color: #a3a3a3;
+}
+.right {
+    float: right;
+    font-size: 12px;
+}
+.icon span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 14px;
+    margin-left: 3px;
+}
+.icon .xin {
+    background: url(../img/xin.png) no-repeat left center;
+}
+.icon .look {
+    background: url(../img/reply.png) no-repeat left center;
+}
+.common ul li:nth-child(4n+4) {
+    margin-right: 0;
 }
