@@ -1,0 +1,80 @@
+.clearFix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 内容部分 */
+
+.main_about{
+    width: 1000px;
+    margin: 50px auto;
+    font-family: "Microsoft YaHei",SimHei,"微软雅黑","黑体";
+    line-height: 1.6;
+    color: #333;
+}
+.left_help{
+    width: 270px;
+    padding: 25px 20px;
+    border-radius: 5px;
+    background: #f3f3f3;
+    float: left;
+}
+.left_help>h2{
+    color: #444;
+    padding-left: 18px;
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 900;
+    border-bottom: 1px solid #a0a0a0;
+}
+.left_help>dl{
+    padding: 10px 18px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.left_help dt a{
+    font-weight: bold;
+    color: #535353;
+}
+.left_help dd a{
+    color: #535353;
+    padding-left: 15px;
+}
+
+
+.right_about{
+    float: right;
+    width: 700px;
+    padding: 25px 33px;
+    border-radius: 5px;
+    background: #f3f3f3;
+}
+.right_about>h2{
+    color: #444;
+    font-size: 20px;
+    line-height: 38px;
+    font-weight: 900;
+    border-bottom: 1px solid #a0a0a0;
+}
+.about-info{
+    color: #535353;
+}
+.about-info>h3{
+    font-size: 16px;
+    padding: 25px 0 20px;
+    font-weight: bold;
+    color: #535353;
+}
+.about-info>p{
+    line-height: 1.8;
+}
+.about-info>h5{
+    font-size: 20px;
+    padding: 18px 0 16px;
+    font-weight: bold;
+    color: #474747;
+}
+.about-info>.padl25{
+    padding-left: 25px;
+}

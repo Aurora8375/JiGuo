@@ -1,0 +1,274 @@
+.clearFix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 内容部分 */
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei",SimHei,"微软雅黑","黑体";
+    line-height: 1.6;
+    color: #333;
+}
+.play-top>h1{
+    text-align: center;
+    padding: 34px 0 30px;
+    font-size: 40px;
+    font-weight: normal;
+}
+.play-nav{
+    text-align: center;
+    line-height: 1.7;
+    font-size: 0;
+}
+.play-nav>a{
+    color: #a3a3a3;
+    display: inline-block;
+    padding-bottom: 12px;
+    width: 165px;
+    font-size: 18px;
+}
+.play-nav>.on{
+    color: #fe5431;
+    border-bottom: 4px #fe5431 solid;
+    padding-bottom: 8px;
+}
+.use-box{
+    border-top: 1px solid #f0f0f0;
+}
+.use-nav{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.use-nav>a{
+    display: inline-block;
+    width: 165px;
+    font-size: 18px;
+    color: #a3a3a3;
+}
+.use-nav>.on{
+    color: #474747;
+}
+
+/* 内容部分 */
+.report-box{
+    background: #f7f7f7;
+}
+.pad25{
+    padding-top: 25px;
+}
+.use dl:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.use dl dt {
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 286px;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+    margin-right: 37px;
+}
+.use dl dt:nth-child(4n+4) {
+    margin-right: 0;
+}
+.report-box .use dt {
+    margin-bottom: 35px;
+    background: #fff;
+}
+dt{
+    display: block;
+}
+.use dt a {
+    display: block;
+}
+a{
+    color: #333;
+}
+.use dt .shoufa {
+    background: #fe5341;
+}
+.use dt .top-tip {
+    font-size: 12px;
+    color: #f5e8e8;
+    position: absolute;
+    line-height: 22px;
+    z-index: 10;
+    padding: 0 8px;
+    border-radius: 0 0 0 6px;
+    top: 0;
+    right: 0;
+}
+img {
+    vertical-align: top;
+}
+.use dt .hot-con {
+    padding: 8px 8px 14px;
+    text-align: center;
+}
+.use dt .name {
+    font-size: 16px;
+    height: 48px;
+    font-weight: bold;
+}
+.use dt .graw span, .use dt .graw {
+    color: #ccc;
+}
+.use dt .tabs {
+    padding: 6px 0;
+    font-size: 12px;
+}
+.use dt .graw span {
+    border: 1px solid #ccc;
+}
+.use dt .tabs span {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.use dt .sq {
+    font-size: 16px;
+    line-height: 28px;
+}
+.use dt .red span, .use dt .sq span, .use dt .red {
+    color: #fe5341;
+}
+.use dt .current {
+    font-size: 14px;
+    line-height: 20px;
+}
+.use dt .green span, .use dt .green {
+    color: #80c269;
+}
+.use dt .green span {
+    border: 1px solid #80c269;
+}
+.playMore {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.playMore .more-btn {
+    background: url(../img/more.png) no-repeat left center;
+    color: #fe5341;
+    padding-left: 24px;
+}
+.use dt .red span {
+    border: 1px solid #fe5341;
+    font-size: 12px;
+}
+.use dt .tys {
+    background: #fbf4cb;
+    color: #c4a96a;
+}
+
+/* 悬浮时 */
+@-webkit-keyframes fade{
+	0%,100%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.6;
+	}
+}
+@-moz-keyframes fade{
+	0%,100%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.6;
+	}
+}
+@-ms-keyframes fade{
+	0%,100%{
+		filter:alpha(opacity=100);
+	}
+	50%{
+		filter:alpha(opacity=60);
+	}
+}
+@keyframes fade{
+	0%,100%{
+		opacity:1;
+	}
+	50%{
+		opacity:0.6;
+	}
+}
+
+.report-box dt:hover{
+    animation:fade 1s ease-in infinite;-moz-animation:fade 1s ease-in infinite;-webkit-animation:fade 1s ease-in infinite;
+}
+
+
+/* 导购最热页面 */
+.common ul {
+    padding-bottom: 20px;
+}
+.common ul li {
+    background: #fff;
+    width: 220px;
+    height: 231px;
+    line-height: 21px;
+    margin: 0 37px 35px 0;
+    float: left;
+    border: 1px solid #e6e9e9;
+    border-radius: 6px;
+}
+.common ul li:hover{
+    animation:fade 1s ease-in infinite;-moz-animation:fade 1s ease-in infinite;-webkit-animation:fade 1s ease-in infinite;
+}
+.common ul li a {
+    display: block;
+    color: #474747;
+}
+.common ul li img {
+    border-radius: 6px 6px 0 0;
+}
+.common li .info {
+    padding: 7px 10px 10px;
+    height: 114px;
+}
+.guide li .info {
+    background: url(../img/listbg.jpg) no-repeat left bottom;
+    background-size: 221px 19px;
+}
+.report-box .common .info .name {
+    font-size: 14px;
+    height: 45px;
+    overflow: hidden;
+    word-break: break-all;
+}
+.common .info .tip {
+    padding: 13px 0;
+    color: #a3a3a3;
+}
+.right {
+    float: right;
+    font-size: 12px;
+}
+.icon span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 14px;
+    margin-left: 3px;
+}
+.icon .xin {
+    background: url(../img/xin.png) no-repeat left center;
+}
+.icon .look {
+    background: url(../img/reply.png) no-repeat left center;
+}
+.common ul li:nth-child(4n+4) {
+    margin-right: 0;
+}
