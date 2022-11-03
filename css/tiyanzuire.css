@@ -66,7 +66,7 @@ header>.box {
     margin-left: 8%;
 }
 
-.box1>ul>li>.red {
+.box1>ul>li:nth-of-type(5)>a {
     color: #fe5341;
 }
 
@@ -85,7 +85,7 @@ header>.box {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: url(/img/search.png) no-repeat 11px 15px;
+    background: url(../img/search.png) no-repeat 11px 15px;
 }
 
 .sour a:hover {
@@ -163,7 +163,7 @@ footer {
 .di>.wen1>.tu1 {
     width: 100%;
     height: 100px;
-    background: url(/img/logoImg.jpg) no-repeat 0px 25px;
+    background: url(../img/logoImg.jpg) no-repeat 0px 25px;
 }
 
 .tu2 {
@@ -481,7 +481,7 @@ a:hover img {
     height: 30px;
     float: left;
     border-radius: 50%;
-    background: url(/img/tx.jpg)no-repeat 0px 0px;
+    background: url(../img/tx.jpg)no-repeat 0px 0px;
 }
 
 .su1 {
@@ -503,7 +503,7 @@ a:hover img {
     width: 30%;
     height: 30px;
     padding-left: 20px;
-    background: url(/img/reply.png) no-repeat 8px 3px;
+    background: url(../img/reply.png) no-repeat 8px 3px;
 }
 
 .liu>span:nth-of-type(2) {
@@ -513,7 +513,7 @@ a:hover img {
     width: 30%;
     height: 30px;
     padding-left: 20px;
-    background: url(/img/zan.png) no-repeat 8px 3px;
+    background: url(../img/zan.png) no-repeat 8px 3px;
 }
 
 .geli {
@@ -545,7 +545,7 @@ a:hover img {
     font-size: 14px;
     color: #FE5341;
     padding-left: 20px;
-    background: url(/img/more.png)no-repeat 43% 6px;
+    background: url(../img/more.png)no-repeat 43% 6px;
 }
 
 .span1 {
@@ -553,7 +553,7 @@ a:hover img {
     color: #FE5341;
     display: none;
     padding-left: 20px;
-    background: url(/img/loading-icon.gif)no-repeat 42% 1px;
+    background: url(../img/loading-icon.gif)no-repeat 42% 1px;
 }
 
 .m1 {
