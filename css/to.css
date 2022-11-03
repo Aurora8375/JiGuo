@@ -65,7 +65,7 @@ header>.box {
     margin-left: 8%;
 }
 
-.box1>ul>li:nth-of-type(1)>a {
+.box1>ul>li>.red {
     color: #fe5341;
 }
 
