@@ -31,7 +31,7 @@ var fl = true //开关
 function show() {
     for (var item of date) {
         str = `
-        <a href="./guid/json/detail.html">
+        <a href="../guid/detail.html">
         <img src="${item.img}">
         <div class="location">
             <p>${item.text}</p>
@@ -49,7 +49,7 @@ function show() {
         </div>
     </a>
     <div class="geli">
-        <a href="./guid/json/detail.html">
+        <a href="../guid/detail.html">
             <p>关于Freeson 智能实木音箱还有 17 篇报告，点击查看</p>
         </a>
     </div>
